@@ -19,4 +19,5 @@ jobs:
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
           expo-cache: true
       - run: yarn install
+      - run: expo fetch:android:keystore
       - run: expo build:android
